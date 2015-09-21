@@ -23,6 +23,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <NonTransactedFileStreamAccess>FULL</NonTransactedFileStreamAccess>
+    <FileStreamDirectoryName>Filestream</FileStreamDirectoryName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -60,6 +62,25 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Address.sql" />
+    <Build Include="Account.sql" />
+    <Build Include="Activity.sql" />
+    <Build Include="ActivityType.sql" />
+    <Build Include="AccountType.sql" />
+    <Build Include="AddressType.sql" />
+    <Build Include="Asset.sql" />
+    <Build Include="AssetType.sql" />
+    <Build Include="Document.sql" />
+    <Build Include="DocumentType.sql" />
+    <Build Include="Campaign.sql" />
+    <Build Include="CampaignType.sql" />
+    <Build Include="Contact.sql" />
+    <Build Include="ContactType.sql" />
+    <Build Include="Note.sql" />
+    <Build Include="NoteType.sql" />
+    <Build Include="User.sql" />
+    <Build Include="UserType.sql" />
+    <Build Include="StateProvince.sql" />
+    <Build Include="Report.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CRM_Database.refactorlog" />
